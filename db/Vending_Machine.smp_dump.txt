@@ -1,0 +1,12 @@
+
+State Machine - |Vending_Machine|n_state
+Name n_state.00 n_state.s2 n_state.s1 
+n_state.00 0 0 0 
+n_state.s1 1 0 1 
+n_state.s2 1 1 0 
+
+State Machine - |Vending_Machine|c_state
+Name c_state.00 c_state.s2 c_state.s1 
+c_state.00 0 0 0 
+c_state.s1 1 0 1 
+c_state.s2 1 1 0 

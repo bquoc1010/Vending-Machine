@@ -1,0 +1,22 @@
+|Vending_Machine
+Clk => out~reg0.CLK
+Clk => change[0]~reg0.CLK
+Clk => change[1]~reg0.CLK
+Clk => n_state~1.DATAIN
+Clk => c_state~4.DATAIN
+rst => c_state.OUTPUTSELECT
+rst => c_state.OUTPUTSELECT
+rst => c_state.OUTPUTSELECT
+rst => change.OUTPUTSELECT
+rst => change.OUTPUTSELECT
+in[0] => Equal0.IN1
+in[0] => Equal1.IN0
+in[0] => Equal2.IN1
+in[1] => Equal0.IN0
+in[1] => Equal1.IN1
+in[1] => Equal2.IN0
+out << out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+change[0] << change[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+change[1] << change[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
